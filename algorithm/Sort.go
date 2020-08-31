@@ -21,9 +21,22 @@ func bubbleSort(nums []int) {
 	}
 }
 
-//todo
 func insertSort(nums []int)  {
-
+	if len(nums) <= 1{
+		return
+	}
+	for i:=1;i<len(nums);i++ {
+		j := i-1
+		value := nums[i]
+		for ;j>=0;j--{
+			if value < nums[j] {
+				nums[j+1] = nums[j]
+			}else {
+				break
+			}
+		}
+		nums[j+1] = value
+	}
 }
 
 //todo
@@ -33,6 +46,6 @@ func selectSort(nums []int)  {
 
 func main() {
 	nums := []int{4,5,6,3,2,1}
-	bubbleSort(nums)
+	insertSort(nums)
 	fmt.Print(nums)
 }
