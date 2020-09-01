@@ -1,4 +1,4 @@
-package src
+package main
 
 func bubbleSort(nums []int) {
 	if len(nums) > 1 {

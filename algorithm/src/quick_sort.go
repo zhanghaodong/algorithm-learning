@@ -1,4 +1,4 @@
-package src
+package main
 
 func quickSort(nums []int)  {
 	quickSortHelper(nums,0, len(nums)-1)
