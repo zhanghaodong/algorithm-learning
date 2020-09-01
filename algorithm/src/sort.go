@@ -1,4 +1,4 @@
-package algorithm
+package src
 
 func bubbleSort(nums []int) {
 	if len(nums) > 1 {

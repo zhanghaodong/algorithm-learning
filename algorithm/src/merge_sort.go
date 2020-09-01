@@ -1,4 +1,4 @@
-package algorithm
+package src
 
 func mergeSort(nums []int) []int{
 	if len(nums) < 2 {
