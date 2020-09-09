@@ -2,9 +2,9 @@ package main
 
 func bubbleSort(nums []int) {
 	if len(nums) > 1 {
-		for k:=0; k<len(nums);k++ {
+		for k := 0; k < len(nums); k++ {
 			flag := false
-			for i:=0; i<len(nums)-k-1; i++{
+			for i := 0; i < len(nums)-k-1; i++ {
 				if nums[i] > nums[i+1] {
 					temp := nums[i+1]
 					nums[i+1] = nums[i]
@@ -19,17 +19,17 @@ func bubbleSort(nums []int) {
 	}
 }
 
-func insertSort(nums []int)  {
-	if len(nums) <= 1{
+func insertSort(nums []int) {
+	if len(nums) <= 1 {
 		return
 	}
-	for i:=1;i<len(nums);i++ {
-		j := i-1
+	for i := 1; i < len(nums); i++ {
+		j := i - 1
 		value := nums[i]
-		for ;j>=0;j--{
+		for ; j >= 0; j-- {
 			if value < nums[j] {
 				nums[j+1] = nums[j]
-			}else {
+			} else {
 				break
 			}
 		}
@@ -37,14 +37,14 @@ func insertSort(nums []int)  {
 	}
 }
 
-func selectSort(nums []int)  {
-	if len(nums) <=1 {
+func selectSort(nums []int) {
+	if len(nums) <= 1 {
 		return
 	}
-	for i:=0;i<len(nums)-1;i++ {
-		minIndex := len(nums)-1
+	for i := 0; i < len(nums)-1; i++ {
+		minIndex := len(nums) - 1
 		minValue := nums[minIndex]
-		for k:=i;k<len(nums);k++ {
+		for k := i; k < len(nums); k++ {
 			if minValue > nums[k] {
 				minValue = nums[k]
 				minIndex = k

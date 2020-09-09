@@ -6,15 +6,15 @@ import (
 )
 
 type numberTest struct {
-	in[] int
+	in  []int
 	out []int
 }
 
 func TestNormalSort(t *testing.T) {
 
 	numberTests := []numberTest{
-		{[]int{5,2,5,7,1,0,8}, []int{0,1,2,5,5,7,8}},
-		{[]int{6,5,4,1,2,3}, []int{1,2,3,4,5,6}},
+		{[]int{5, 2, 5, 7, 1, 0, 8}, []int{0, 1, 2, 5, 5, 7, 8}},
+		{[]int{6, 5, 4, 1, 2, 3}, []int{1, 2, 3, 4, 5, 6}},
 	}
 
 	for _, expected := range numberTests {
@@ -25,8 +25,8 @@ func TestNormalSort(t *testing.T) {
 	}
 
 	numberTests = []numberTest{
-		{[]int{5,2,5,7,1,0,8}, []int{0,1,2,5,5,7,8}},
-		{[]int{6,5,4,1,2,3}, []int{1,2,3,4,5,6}},
+		{[]int{5, 2, 5, 7, 1, 0, 8}, []int{0, 1, 2, 5, 5, 7, 8}},
+		{[]int{6, 5, 4, 1, 2, 3}, []int{1, 2, 3, 4, 5, 6}},
 	}
 
 	for _, expected := range numberTests {
@@ -37,8 +37,8 @@ func TestNormalSort(t *testing.T) {
 	}
 
 	numberTests = []numberTest{
-		{[]int{5,2,5,7,1,0,8}, []int{0,1,2,5,5,7,8}},
-		{[]int{6,5,4,1,2,3}, []int{1,2,3,4,5,6}},
+		{[]int{5, 2, 5, 7, 1, 0, 8}, []int{0, 1, 2, 5, 5, 7, 8}},
+		{[]int{6, 5, 4, 1, 2, 3}, []int{1, 2, 3, 4, 5, 6}},
 	}
 
 	for _, expected := range numberTests {
@@ -49,10 +49,10 @@ func TestNormalSort(t *testing.T) {
 	}
 }
 
-func TestMergeSort(t *testing.T)  {
+func TestMergeSort(t *testing.T) {
 	numberTests := []numberTest{
-		{[]int{5,2,5,7,1,0,8}, []int{0,1,2,5,5,7,8}},
-		{[]int{6,5,4,1,2,3}, []int{1,2,3,4,5,6}},
+		{[]int{5, 2, 5, 7, 1, 0, 8}, []int{0, 1, 2, 5, 5, 7, 8}},
+		{[]int{6, 5, 4, 1, 2, 3}, []int{1, 2, 3, 4, 5, 6}},
 	}
 
 	for _, expected := range numberTests {
@@ -63,10 +63,10 @@ func TestMergeSort(t *testing.T)  {
 	}
 }
 
-func TestQuickSort(t *testing.T)  {
+func TestQuickSort(t *testing.T) {
 	numberTests := []numberTest{
-		{[]int{5,2,5,7,1,0,8}, []int{0,1,2,5,5,7,8}},
-		{[]int{6,5,4,1,2,3}, []int{1,2,3,4,5,6}},
+		{[]int{5, 2, 5, 7, 1, 0, 8}, []int{0, 1, 2, 5, 5, 7, 8}},
+		{[]int{6, 5, 4, 1, 2, 3}, []int{1, 2, 3, 4, 5, 6}},
 	}
 
 	for _, expected := range numberTests {
